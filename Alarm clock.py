@@ -99,11 +99,11 @@ while yes_no == "y" or yes_no =="yes":
             draw_clock()
             wn.update()
             if Time == Alarm:
-                winsound.Beep(1000, 5000) # Beep sound with frequency 1000 Hz and duration 5000 ms
-                break # Break the loop when the alarm goes off
-            time.sleep(1) # Wait for one second before updating the time
-    except ValueError: # Handle the invalid input
+                winsound.Beep(1000, 5000)
+                break 
+            time.sleep(1) 
+    except ValueError: 
         print("Invalid time format. Please enter the time in HH:MM:SS format.")
-        yes_no = "n" # Set yes_no to "n" to ask for a new input
+        yes_no = "n" 
 
-wn.mainloop() # Keep the turtle window open until closed manually
+wn.mainloop() 
